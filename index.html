@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+        .logo {
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+        }
+        
+        </style>
+</head>
+<body>
+
+	<!-- Navbar goes here -->
+	<nav class="">
+		<div class="flex max-w-6xl mx-auto px-4">
+					
+        <!-- Hamburger Icon -->             
+        <div class="flex items-center justify-evenly space-x-[125px]">
+
+        <!-- Website Logo -->
+        <div>
+        <a href="#" class="flex items-center py-4 px-2"><span class="logo text-[30px] ml-[30px]">Damien Doussot </span></a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg>" id="menu-button" class="h-8 w-8 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round"  stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/> </svg>
+        <div class="hidden w-full md:flex md:items-center md:w-auto " id="menu">
+            <ul class="text-base text-gray-700 pt-4 md:flex md:pt-0">
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Features</a>
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Customers</a>
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+	</nav>
+
+
+    <!-- Primary Navbar items -->
+
+<style>
+
+#test {
+  background-image: url("slider_damien.png");
+  width: 100%;
+  height: 495px;
+  background-attachment: scroll;
+}
+
+</style>
+
+<script>
+
+const button = document.querySelector('#menu-button'); // Hamburger Icon
+const menu = document.querySelector('#menu'); // Menu
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+</script>
+
+<div id="test"></div>
+</body>
+</html>
